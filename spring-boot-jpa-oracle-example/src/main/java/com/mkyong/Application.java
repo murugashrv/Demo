@@ -34,7 +34,7 @@ public class Application implements CommandLineRunner {
     }
 
     @Transactional(readOnly = true)
-    @Override
+    //@Override
     public void run(String... args) throws Exception {
 
         System.out.println("DATASOURCE = " + dataSource);
