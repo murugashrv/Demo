@@ -1,0 +1,36 @@
+# Server
+spring:
+  profiles: 
+    active: dev    
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.Oracle12cDialect
+    hibernate:
+      naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: create
+    open-in-view: false 
+  datasource:       
+        url: jdbc:oracle:thin:@//DSRCCLOUD.dsrc.in:1521/orcll.dsrc.in
+        username: SYSTEM
+        password: Passw0rd
+        driver-class-name: oracle.jdbc.driver.OracleDriver       
+  flyway:
+   locations: classpath:db/migrations/oracle
+   enabled: true
+   baseline-on-migrate: true
+   url:  jdbc:oracle:thin:@//DSRCCLOUD.dsrc.in:1521/orcll.dsrc.in
+   user: SYSTEM
+   password: Passw0rd
+   table: schema_history
+
+
+# email setting
+mail-username: baisram.dhakar@dsrc.co.in
+mail-password: Baisram@22
+network-host: 192.168.4.101
+network-port: 2525
+
+
+# licence-department-email-address
+# driver.lic@wolverhampton.gov.uk
+licence-department-email-address: ganapathi.k@dsrc.co.in
