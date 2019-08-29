@@ -58,9 +58,9 @@ public class Application implements CommandLineRunner {
         }
 
      System.out.println("Done!");
-     System.out.println("new updation done!");
         exit(0);
-        
+        System.out.println("new updation done!");
+              
     }
 
 }
