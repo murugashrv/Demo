@@ -40,14 +40,16 @@ public class Application implements CommandLineRunner {
         System.out.println("DATASOURCE = " + dataSource);
 
         System.out.println("\n1.findAll()...");
-        for (Customer customer : customerRepository.findAll()) {
-            System.out.println(customer);
-        }
-
+        
         System.out.println("\n2.findByEmail(String email)...");
         for (Customer customer : customerRepository.findByEmail("222@yahoo.com")) {
             System.out.println(customer);
         }
+        
+        for (Customer customer : customerRepository.findAll()) {
+            System.out.println(customer);
+        }
+
 
         System.out.println("\n3.findByDate(Date date)...");
         for (Customer customer : customerRepository.findByDate(sdf.parse("2017-02-12"))) {
