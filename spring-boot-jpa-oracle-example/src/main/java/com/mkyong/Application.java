@@ -46,11 +46,6 @@ public class Application implements CommandLineRunner {
             System.out.println(customer);
         }
         
-        for (Customer customer : customerRepository.findAll()) {
-            System.out.println(customer);
-        }
-
-
         System.out.println("\n3.findByDate(Date date)...");
         for (Customer customer : customerRepository.findByDate(sdf.parse("2017-02-12"))) {
             System.out.println(customer);
