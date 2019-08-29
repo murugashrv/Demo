@@ -26,7 +26,7 @@ public class Application implements CommandLineRunner {
     @Autowired
     DataSource dataSource;//
 
-    @Autowired
+    //@Autowired
     CustomerRepository customerRepository;
 
     public static void main(String[] args) throws Exception {
