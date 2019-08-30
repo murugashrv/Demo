@@ -57,8 +57,8 @@ public class Application implements CommandLineRunner {
             stream.forEach(x -> System.out.println(x));
         }
      System.out.println("Done!");
-     System.out.println("new updation done!");
         exit(0);
+        System.out.println("new updation done!");
     }
 
 }
