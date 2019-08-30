@@ -56,12 +56,9 @@ public class Application implements CommandLineRunner {
         try (Stream<Customer> stream = customerRepository.findByEmailReturnStream("333@yahoo.com")) {
             stream.forEach(x -> System.out.println(x));
         }
-
      System.out.println("Done!");
      System.out.println("new updation done!");
         exit(0);
-        
-              
     }
 
 }
